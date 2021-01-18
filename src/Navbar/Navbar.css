@@ -1,0 +1,47 @@
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: transparent;
+}
+
+nav {
+    width: 90vw;
+    height: 10vh;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #747474;
+    margin: 2rem;
+}
+
+li a:hover {
+    color: #fff;
+    transition: 0.25s ease-in;
+}
+
+.active {
+    color: #fff;
+}
+
+/* .dot {
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+} */
+
+/* <span class="dot"></span> */
