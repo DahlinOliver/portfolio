@@ -2,6 +2,8 @@ header {
     width: 100vw;
     height: 10vh;
     background-color: transparent;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -11,7 +13,7 @@ nav {
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,25 +25,28 @@ li {
 li a {
     text-decoration: none;
     color: #747474;
-    margin: 2rem;
+    margin: 4rem;
 }
 
 li a:hover {
     color: #fff;
     transition: 0.25s ease-in;
+    cursor: pointer;
 }
 
 .active {
     color: #fff;
 }
 
-/* .dot {
-  height: 5px;
-  width: 5px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-} */
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-/* <span class="dot"></span> */
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo > img:nth-child(1) {
+    width: 50px;
+}

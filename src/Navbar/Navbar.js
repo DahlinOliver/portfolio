@@ -1,24 +1,30 @@
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 import './Navbar.css';
+import logo from '../images/DaliiN.png';
+import oliver from '../images/oliver-dahlin-logo.png';
 
-const links = document.querySelectorAll('a');
-console.log(links);
-
-links.forEach(links => {
-    links.addEventListener('click', function () {
-        links.forEach(links => links.classList.remove('active'));
-        this.classList.add('active');
-    });
+scroller.scrollTo('myScrollToElement', {
+    duration: 3000,
+    delay: 100,
+    smooth: 'easeInOutQuint',
 });
 
 function Navbar() {
     return (
         <header>
             <nav>
+                <div className="logo" onClick={() => scroll.scrollToTop(0, 0)}>
+                    <img src={logo} alt="logo" />
+                    <img src={oliver} alt="Oliver Dahlin" />
+                </div>
+
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><Link activeClass="active" to="#" spy="true" smooth={true} offset={0} duration={500}>Home</Link></li>
+                    <li><Link activeClass="active" to="about" spy="true" smooth={true} offset={0} duration={500}>About</Link></li>
+                    <li><Link activeClass="active" to="projects" spy="true" smooth={true} offset={0} duration={500}>Projects</Link></li>
+                    <li><Link activeClass="active" to="contact" spy="true" smooth={true} offset={0} duration={500}>Contact</Link></li>
                 </ul>
             </nav>
         </header>
