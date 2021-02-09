@@ -26,21 +26,27 @@ function Contact() {
             </div>
             <div className="footer">
                 <img src={logo} alt="logo" />
-                <span>Links</span>
-                <ul>
+
+                <div className="links-c">
+                    <span>Links</span>
+
                     <li><Link to="#" smooth={true} offset={0} duration={500}>Home</Link></li>
                     <li><Link to="about" smooth={true} offset={0} duration={500}>About</Link></li>
                     <li><Link to="projects" smooth={true} offset={0} duration={500}>Projects</Link></li>
                     <li><Link to="contact" smooth={true} offset={0} duration={500}>Contact</Link></li>
-                </ul>
 
-                <span>Socials</span>
-                <ul>
+                </div>
+
+                <div className="socials-c">
+                    <span>Socials</span>
+
                     <li><a href="https://www.facebook.com/oliver.dalin/" target="_blank">Facebook</a></li>
                     <li><a href="https://www.instagram.com/oliiver.dahliin/" target="_blank">Instagram</a></li>
                     <li><a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/DahlinOliver" target="_blank">Github</a></li>
-                </ul>
+                </div>
+                <hr />
+                <p>Oliver Dahlin © 2021. All rights reserved.</p>
             </div>
         </div>
     );

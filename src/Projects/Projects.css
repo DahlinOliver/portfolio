@@ -2,4 +2,27 @@
     height: 100vh;
     width: 100vw;
     background-color: rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+}
+
+.swiper-wrapper {
+    height: 80vw;
+    width: 100%;
+    margin: auto;
+}
+
+.swiper-slide {
+    background-color: rgb(105, 105, 105);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
