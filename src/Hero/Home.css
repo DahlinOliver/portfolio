@@ -58,6 +58,11 @@ button {
     transition: 0.25s ease-in;
 }
 
+a {
+    color: #fff;
+    cursor: pointer;
+}
+
 #vertical-line {
     border-left: 1px solid #747474; 
     height: 2.5rem;

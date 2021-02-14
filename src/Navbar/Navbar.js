@@ -5,11 +5,9 @@ import './Navbar.css';
 import logo from '../images/DaliiN.png';
 import oliver from '../images/oliver-dahlin-logo.png';
 
-scroller.scrollTo('myScrollToElement', {
-    duration: 3000,
-    delay: 100,
-    smooth: 'easeInOutQuint',
-});
+const Home = () => {
+    scroll.scrollToTop();
+};
 
 function Navbar() {
     return (
@@ -21,7 +19,7 @@ function Navbar() {
                 </div>
 
                 <ul>
-                    <li><Link activeClass="active" to="#" spy="true" smooth={true} offset={0} duration={500}>Home</Link></li>
+                    <li><Link onClick={Home} activeClass="active" to="#" spy="true" smooth={true} offset={0} duration={500}>Home</Link></li>
                     <li><Link activeClass="active" to="about" spy="true" smooth={true} offset={0} duration={500}>About</Link></li>
                     <li><Link activeClass="active" to="projects" spy="true" smooth={true} offset={0} duration={500}>Projects</Link></li>
                     <li><Link activeClass="active" to="contact" spy="true" smooth={true} offset={0} duration={500}>Contact</Link></li>

@@ -7,6 +7,10 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 import { SiMinutemailer } from 'react-icons/si';
 import { RiMailSendLine } from 'react-icons/ri';
 
+const Home = () => {
+    scroll.scrollToTop();
+};
+
 function Contact() {
     return (
         <div id="contact">
@@ -25,28 +29,32 @@ function Contact() {
                 </div>
             </div>
             <div className="footer">
-                <img src={logo} alt="logo" />
+                <div className="footer-content">
+                    <img src={logo} alt="logo" />
 
-                <div className="links-c">
-                    <span>Links</span>
+                    <div className="links-c">
+                        <span>Links</span>
 
-                    <li><Link to="#" smooth={true} offset={0} duration={500}>Home</Link></li>
-                    <li><Link to="about" smooth={true} offset={0} duration={500}>About</Link></li>
-                    <li><Link to="projects" smooth={true} offset={0} duration={500}>Projects</Link></li>
-                    <li><Link to="contact" smooth={true} offset={0} duration={500}>Contact</Link></li>
+                        <li><Link onClick={Home} to="#" smooth={true} offset={0} duration={500}>Home</Link></li>
+                        <li><Link to="about" smooth={true} offset={0} duration={500}>About</Link></li>
+                        <li><Link to="projects" smooth={true} offset={0} duration={500}>Projects</Link></li>
+                        <li><Link to="contact" smooth={true} offset={0} duration={500}>Contact</Link></li>
 
+                    </div>
+
+                    <div className="socials-c">
+                        <span>Socials</span>
+
+                        <li><a href="https://www.facebook.com/oliver.dalin/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/oliiver.dahliin/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/DahlinOliver" target="_blank">Github</a></li>
+                    </div>
                 </div>
-
-                <div className="socials-c">
-                    <span>Socials</span>
-
-                    <li><a href="https://www.facebook.com/oliver.dalin/" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/oliiver.dahliin/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/DahlinOliver" target="_blank">Github</a></li>
+                <div className="copyright">
+                    <hr />
+                    <p>Oliver Dahlin © 2021. All rights reserved.</p>
                 </div>
-                <hr />
-                <p>Oliver Dahlin © 2021. All rights reserved.</p>
             </div>
         </div>
     );
