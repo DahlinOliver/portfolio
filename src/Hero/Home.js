@@ -1,7 +1,6 @@
 import './Home.css';
 
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
@@ -10,7 +9,7 @@ import { FaGithub } from 'react-icons/fa';
 
 function Home() {
     return (
-        <section className="hero">
+        <section id="home" className="hero">
             <div className="hero-content">
                 <h1>Hello.</h1>
                 <h2>I'm Oliver Dahlin</h2>
@@ -19,10 +18,10 @@ function Home() {
             </div>
 
             <div className="socials">
-                <a href="https://www.facebook.com/oliver.dalin/" target="_blank"><FaFacebook /></a>
-                <a href="https://www.instagram.com/oliiver.dahliin/" target="_blank"><FaInstagram /></a>
-                <a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank"><FaLinkedin /></a>
-                <a href="https://github.com/DahlinOliver" target="_blank"><FaGithub /></a>
+                <a href="https://www.facebook.com/oliver.dalin/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                <a href="https://www.instagram.com/oliiver.dahliin/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                <a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                <a href="https://github.com/DahlinOliver" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                 <div id="vertical-line"></div>
             </div>
         </section >

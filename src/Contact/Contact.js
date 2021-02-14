@@ -1,15 +1,10 @@
 import './Contact.css';
 import logo from '../images/DaliiN.png';
 
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import { SiMinutemailer } from 'react-icons/si';
 import { RiMailSendLine } from 'react-icons/ri';
-
-const Home = () => {
-    scroll.scrollToTop();
-};
 
 function Contact() {
     return (
@@ -35,7 +30,7 @@ function Contact() {
                     <div className="links-c">
                         <span>Links</span>
 
-                        <li><Link onClick={Home} to="#" smooth={true} offset={0} duration={500}>Home</Link></li>
+                        <li><Link to="home" smooth={true} offset={-97.5} duration={500}>Home</Link></li>
                         <li><Link to="about" smooth={true} offset={0} duration={500}>About</Link></li>
                         <li><Link to="projects" smooth={true} offset={0} duration={500}>Projects</Link></li>
                         <li><Link to="contact" smooth={true} offset={0} duration={500}>Contact</Link></li>
@@ -45,10 +40,10 @@ function Contact() {
                     <div className="socials-c">
                         <span>Socials</span>
 
-                        <li><a href="https://www.facebook.com/oliver.dalin/" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/oliiver.dahliin/" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/DahlinOliver" target="_blank">Github</a></li>
+                        <li><a href="https://www.facebook.com/oliver.dalin/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/oliiver.dahliin/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/oliver-dahlin-8056571b5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/DahlinOliver" target="_blank" rel="noopener noreferrer">Github</a></li>
                     </div>
                 </div>
                 <div className="copyright">
